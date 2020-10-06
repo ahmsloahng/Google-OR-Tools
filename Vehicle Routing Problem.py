@@ -1,7 +1,9 @@
 
 from __future__ import print_function
-from ortools.constraint_solver import routing_enums_pb2
+
 from ortools.constraint_solver import pywrapcp
+from ortools.constraint_solver import routing_enums_pb2
+
 
 def create_data_model():
     """Stores the data for the problem."""
@@ -134,7 +136,7 @@ def main():
         True,  # start cumul to zero
         dimension_name)
     distance_dimension = routing.GetDimensionOrDie(dimension_name)
-    distance_dimension.SetGlobalSpanCostCoefficient(100)
+    distance_dimension.SetGlobalSpanCostCoefficient(10)
 
     # Setting first solution heuristic.
     search_parameters = pywrapcp.DefaultRoutingSearchParameters()

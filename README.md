@@ -8,3 +8,5 @@ The Vehicle Routing Problem codes from Google OR Tools are implemented
 68 VRP Problems from Discrete Optimization course are in data/data folder. 65 solutions are available in Solution folder. Solution are not optimal. The code is solver.py
 ### Vehicle Routing Problem with pickup and delivery
 Implementation of Vehicle Routing Problem with pickup and delivery is in the VRP with Pickup & Delivery.py file.
+### routing.py file
+Contains Constrained VRP and restriction of time/distance for each truck.
